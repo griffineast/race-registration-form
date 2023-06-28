@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title" class="center-text">Race Registration Form</h1>
+    <p id="description" class="center-text">Thank you for your interest in the Sunset 5K & Half Marathon. Please complete the form below to register.</p>
+    <div class="form-container">
+        <form id="survey-form">
+        <fieldset>
+            <p>Basic information</p>
+            <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Enter your full name" required ></label>
+            <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+            <label id="number-label" for="age">Age <input id="number" name="age" type="number" placeholder="Age" min="13" max="100"></label>
+            <label for="dropdown"> Gender
+            <select id="dropdown" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>What race are you registering for?</p>
+            <label for="5K"><input id="5K" type="radio" value="5K" name="race-selection" class="inline" >5K</label>
+            <label for="half-marathon"><input id="half-marathon" type="radio" value="half-marathon" name="race-selection" class="inline" >Half Marathon</label>
+        </fieldset>
+        <fieldset>
+            <p>How did you hear about us? (select all that apply)</p>
+            <label for="social-media"><input id="social-media" type="checkbox" name="referral" value="social-media" class="inline">Social Media</label>
+            <label for="google-ad"><input id="google-ad" type="checkbox" name="referral" value="google-ad" class="inline">Google Ad</label>
+            <label for="radio"><input id="radio" type="checkbox" name="referral" value="radio" class="inline">Radio</label>
+            <label for="tv-ad"><input id="tv-ad" type="checkbox" name="referral" value="tv-ad" class="inline">TV Ad</label>
+            <label for="word-of-mouth"><input id="word-of-mouth" type="checkbox" name="referral" value="word-of-mouth" class="inline">Word of mouth</label>
+        </fieldset>
+        <fieldset>
+            <p>Questions, comments, concerns?</p>
+            <label>Let us know: <textarea rows="3" cols="30" placeholder="I think this race is gonna be awesome..."></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+        </form>  
+    </div>
+</body>
+</html>
